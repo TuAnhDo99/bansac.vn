@@ -1,5 +1,4 @@
 <svg width="1440" height="531" viewBox="0 0 1440 531" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g filter="url(#filter0_d_89_201)">
 <g opacity="0.15">
 <path d="M1305.91 346.653V262.839H1306.54V240.659H1308.34V239.688H1313.42V236.317H1316.28V239.688H1321.75V236.317H1324.61V239.688H1326.51V236.317H1329.37V239.688H1330.12L1330.72 233.409H1330.25V232.836H1330.81L1330.87 232.446H1331.9L1331.98 232.836H1332.47V233.409H1332.11L1332.88 239.688H1339.59V238.983H1342.46V239.688H1349.91V240.659H1351.77V262.839H1352.4V380.181L1313.32 381.29L1309.68 380.634H1292.24V346.653H1305.91Z" fill="white"/>
 <path d="M1359.66 317.427V269.269H1365.21V258.197H1374.48V257.373H1376.54V240.306H1377.18V257.373H1379.25V258.197H1388.51V269.269H1394.07V334.053H1396.47V339.141H1401.05V344.086H1406.17V349.676H1411V387.514H1358.24V371.892V355.265V349.676V334.053V317.427H1359.66Z" fill="white"/>
@@ -646,18 +645,7 @@
 <path d="M312.099 445.421C311.895 445.914 312.231 446.521 312.849 446.777C313.467 447.034 314.134 446.844 314.339 446.351C314.542 445.859 314.206 445.251 313.589 444.994C312.972 444.738 312.304 444.93 312.099 445.421Z" fill="#F0463E"/>
 <path d="M290.459 458.677C290.459 458.677 294.416 460.029 295.306 457.671C296.239 455.194 293.915 453.815 292.081 453.444L290.459 458.677Z" fill="#FED591"/>
 <path d="M290.459 458.677L292.096 453.456L282.306 450.515C281.252 450.198 280.324 449.566 279.638 448.702C277.714 446.276 273.52 441.388 271.333 441.87C268.537 442.486 265.562 444.996 274.143 453.23C274.769 453.831 275.533 454.281 276.367 454.526L290.459 458.677Z" fill="#909090"/>
-</g>
 <defs>
-<filter id="filter0_d_89_201" x="-44.1699" y="0.154907" width="1561.6" height="563.845" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_89_201"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_89_201" result="shape"/>
-</filter>
 <pattern id="pattern0_89_201" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_89_201" transform="scale(0.030303 0.037037)"/>
 </pattern>
