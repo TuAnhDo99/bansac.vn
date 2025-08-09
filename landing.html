@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Mô tả trang -->
+    <meta property="og:title" content="Bản sắc">
+    <meta property="og:description" content="Hành trình văn hóa số khơi dậy niềm tự hào dân tộc, kết nối mọi thế hệ người Việt Nam trong và ngoài nước.">
+    <meta property="og:url" content="https://bansac.vn/">
+    <meta property="og:image" content="./images/cover.jpg">
+    <meta property="og:type" content="website">
+
+
+    <title>Bản sắc</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/reset.css" />
@@ -52,6 +61,7 @@
         height: auto;
         background: url(./images/bg-hero.png) no-repeat center center/cover;
         position: relative; /* Add this */
+        background-color: #ffffff;
       }
 
       .hero .container {
@@ -66,6 +76,7 @@
       }
 
       .hero-footer {
+        display: block;
         width: 100%;
         position: absolute;
         left: 50%;
@@ -86,11 +97,18 @@
         color: #ffffff;
       }
 
+      .hero-img{
+        width: 100%;
+        max-width: 712px;
+        height: auto;
+      }
+
       .hero-description {
         font-family: "MontMedium";
         font-size: 24px;
         color: #ffffff;
         margin-top: 30px;
+        text-transform: uppercase;
       }
 
       .btn-register-hero {
@@ -207,6 +225,7 @@
         font-size: 32px;
         color: #0a0a0a;
         margin-bottom: 5px;
+        opacity: .7;
        }
 
        .prize-title2{
@@ -216,6 +235,10 @@
         color: #A62120;
         margin-bottom: 20px;
         line-height: 64px;
+       }
+
+       .prize-title2 span{
+        font-size: 20px;
        }
 
        .prize-text{
@@ -233,6 +256,7 @@
             line-height: 32px;
             text-align: center;
             color: #000000;
+            opacity: .5;
        }
 
 
@@ -271,13 +295,18 @@
         line-height: 64px;
        }
 
+       .main-route-ctn{
+        width: 100%;
+        height: 700px;
+        padding-top: 400px;
+       }
+
        .main-route{
+        min-width: 1000px;
         display: flex;
         width: 100%;
         height: 2px;
         background-color: #EB5D40;
-        margin-top: 400px;
-        margin-bottom: 300px;
        }
 
         .route-no-1
@@ -445,7 +474,7 @@
        }
 
        .rule .container{
-         padding-top: 120px;
+         padding-top: 130px;
          padding-bottom: 80px;
        }
 
@@ -453,7 +482,7 @@
          width: 100%;
          position: absolute;
          left: 50%;
-         top: 99%;
+         top: calc(100% - 2px);
          transform: translateX(-50%);
          z-index: 2;
        }
@@ -466,7 +495,7 @@
          line-height: 24px;
          color: #0A0A0A;
          text-align: center;
-         margin-bottom: 40px;
+         margin-bottom: 16px;
          border-radius: 50px;
          border: 1px solid #0A0A0A;
          text-transform: uppercase;
@@ -497,7 +526,7 @@
        }
 
        .rule-content{
-          margin-bottom: 100px;
+          margin-bottom: 48px;
        }
 
        .rule-sub-title{
@@ -506,6 +535,13 @@
          line-height: 32px;
          color: #1AAC7D;
          text-align: left;
+       }
+
+       .rule-text{
+        font-family: "MontRegular";
+        font-size: 16px;
+        line-height: 24px;
+        color: #0F172A;
        }
 
        .rule-link{
@@ -522,8 +558,7 @@
        }
 
        .rule-sub-title-2{
-          font-family: "MontRegular";
-          font-weight: bold;
+          font-family: "MontBold";
           font-size: 16px;
           line-height: 24px;
           color: #0A0A0A;
@@ -539,9 +574,18 @@
           text-align: left;
           display: flex;
           align-items: center;
-          gap: 5px;
+          gap: 3px;
           margin-bottom: 15px;
        }
+
+        .rule-time span{
+          font-family: "MontRegular";
+
+        }
+
+         .rule-time img{
+          margin-right: 5px;
+         }
 
        .btn-share{
           display: block;
@@ -609,9 +653,9 @@
         }
 
         .quizSwiper .swiper-slide {
-          width: 315px;
-          height: 551px;
-          background: url(./images/bg-quiz-video.png) no-repeat center center/cover;
+          height: 640px;
+          max-width: 320px;
+          background: url(./images/iphone.png) no-repeat center center/cover;
           background-size: 100% 100%;
           position: relative;
         }
@@ -650,24 +694,34 @@
           font-family: "MontMedium";
           font-size: 20px;
           color: #FEFAEF;
-          position: absolute;
-          bottom: 20px;
-          left: 50%;
-          transform: translateX(-50%);
+          background: #000;
+          width: 100%;
+          margin: 0 auto;
+          width: calc(100% - 21px);
+          height: 12%;
+         border-bottom-left-radius: 45px;
+          border-bottom-right-radius: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         .video-container {
-          width: calc(100% - 3px);
+          width: calc(100% - 21px);
           height: calc(100% - 88px);
           margin: 0 auto;
           border-top-left-radius: 20px;
           border-top-right-radius: 20px;
           overflow: hidden;
+          padding-top: 5px;
         }
 
         .video-container iframe {
           width: 100%;
           height: 100%;
+          border-top-left-radius: 45px;
+          border-top-right-radius: 45px;
+
         }
 
         .custom-prev:hover,
@@ -728,8 +782,8 @@
           .video-wrapper{
             width: 100%;
             max-width: 541px;
-            height: 381px;
-            background: url(./images/intro-video-frame.png) no-repeat center center/cover;
+            height: 396px;
+            /* background: url(./images/intro-video-frame.png) no-repeat center center/cover; */
             background-size: 100% 100%;
             padding-top: 75px;
             padding-left: 37px;
@@ -744,6 +798,18 @@
             height: 100%;
            border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+           border-top-left-radius: 20px;
+
+          }
+
+          .phone-video-ctn{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            padding-bottom: 50px;
           }
 
           .phone-video{
@@ -848,7 +914,7 @@
              font-family: "PhuduBold";
              font-size: 56px;
              line-height: 64px;
-             color: ##0A0A0A;
+             color: #0A0A0A;
              text-align: center;
              text-transform: uppercase;
              margin-bottom: 100px;
@@ -905,8 +971,9 @@
 
           .scroll-footer{
               width: 100%;
-              height: 88px;
-              background-color: #fff;
+              height: fit-content;
+              background-color: rgb(255, 255, 255, 0.3);
+              backdrop-filter: blur(10px); /* làm mờ nền phía sau */
               position: fixed;
               bottom: 0;
               left: 0;
@@ -915,7 +982,6 @@
               justify-content: center;
               z-index: 9999;
               gap: 20px;
-              box-shadow: 0 -4px 24px 0 rgba(0,0,0,0.10);
               transition: transform 1s cubic-bezier(0.4,0,0.2,1), opacity 1s cubic-bezier(0.4,0,0.2,1);
               transform: translateY(100%);
               opacity: 0;
@@ -934,7 +1000,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
+            gap: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
            }
 
           .scroll-footer .sf-btn-group .btn-share{
@@ -956,6 +1024,265 @@
             width: 267px;
             height: auto;
           }
+
+          .hidden{
+            display: none;
+          }
+
+          .btn-share.disabled{
+            color: ##FFFFFF;
+            background: #A62120;
+            border: #A62120;
+            opacity: 0.48;
+            pointer-events: none;
+          }
+
+           .btn-vote.disabled{
+            color: ##FFFFFF;
+            background: #1AAC7D;
+            border: #1AAC7D;
+            opacity: 0.48;
+            pointer-events: none;
+           }
+
+           
+           .dark-link{
+             color: #0F172A;
+           }
+
+           .rule-time.inactive{
+            color: #666666;
+           }
+
+           .rule-time.inactive img{
+            filter: grayscale(1) brightness(0) invert(0.4) sepia(1) saturate(0) hue-rotate(0deg) brightness(0.6);
+           }
+
+           .logo-bvh{
+             height: 96px;
+             width: auto;
+           }
+
+           .logo-vtc{
+            height: 96px;
+            width: auto;
+           }
+
+           .burger-menu span{
+            background-color: #ffffff;
+           }
+
+              .display-none-576{
+                display: block;
+              }
+
+              .display-block-576{
+                display: none;
+              }
+
+              .hero-footer-mb{
+                display:none;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                z-index: 1;
+              }
+
+
+           /* responsive */
+           @media (max-width: 992px){
+            .video-wrapper{
+              margin: 0 auto;
+            }
+
+            .main-route-ctn{
+              overflow-x: auto;
+            }
+
+            .intro-title{
+              text-align: center;
+            }
+
+             .scroll-footer .left-cloud,
+              .scroll-footer .right-cloud{
+                height: 100%;
+                width: auto;
+                z-index: -1;
+              }
+
+              .scroll-footer .left-cloud{
+                transform: translateX(-30%);
+              }
+
+              .scroll-footer .right-cloud{
+                transform: translateX(10%);
+              }
+              
+              .sf-btn-group{
+                padding: 10px ;
+              }
+
+              .scroll-footer .sf-btn-group{
+                flex-wrap: wrap;
+              }
+           }
+
+           @media (max-width: 768px){
+
+            .host-item:nth-child(1), .host-item:nth-child(2){
+              width: 100%;
+            }
+
+             
+              
+           }
+
+           @media (max-width: 576px){
+
+              .hero-footer{
+                display: none;
+              }
+
+              .hero-footer-mb{
+                display: block;
+              }
+
+              .display-none-576{
+                display: none;
+              }
+
+              .display-block-576{
+                display: block;
+              }
+             
+            
+
+              .logo-bvh,
+              .logo-vtc{
+                height: 50px;
+                width: auto;
+              }
+
+              .logo-ctn{
+                gap: 12px;
+              }
+
+              .hero-title{
+                margin-bottom: 15px;
+              }
+
+              .hero-description{
+                text-align: center;
+                font-size: 20px;
+              }
+
+              .hero .container{
+                padding-bottom: 300px;
+              }
+
+              .inactive-icon,
+              .active-icon{
+                width: 26px;
+                height: auto;
+              }
+
+              .streak-item span{
+                font-size: 9px;
+              }
+
+              .intro-title{
+                font-size: 36px;
+                text-align: center;
+              }
+
+              .prize-title2{
+                font-size: 40px;
+              }
+
+              .prize-text br{
+                display: none;
+              }
+
+               .prize-text{
+                text-align: justify;
+               }
+
+               .route-title{
+                font-size: 40px;
+               }
+
+               .rule-title{
+                font-size: 36px;
+                margin-bottom: 24px;
+               }
+
+               .rule-sub-title{
+                font-size: 20px;
+               }
+
+               .btn-share{
+                width: 100%;
+                text-align: center;
+               }
+
+               .host{
+                background-position: left center;
+               }
+
+               .qa-title{
+                font-size: 36px;
+               }
+
+               .qa-content-title{
+                font-size: 18px;
+               }
+
+               .video-wrapper{
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                height: unset;
+                aspect-ratio: 4/3;
+               }
+
+               .swiper-ctn{
+                height: fit-content;
+               }
+              
+           }
+
+           @media (max-width: 450px){
+
+            .quizSwiper .swiper-slide{
+                height: 550px;
+               }
+
+               .quiz-number{
+                height: 15%;
+               }
+           } 
+
+           @media (max-width: 400px){
+              .quizSwiper .swiper-slide{
+                height: 490px;
+               }
+
+                   .quiz-number {
+                    height: 17%;
+                    border-bottom-left-radius: 36px;
+                    border-bottom-right-radius: 36px;
+                }
+
+                .video-container iframe {
+
+                  border-top-left-radius: 36px;
+                  border-top-right-radius: 36px;
+              }
+           }
+
     </style>
 
     <!-- Header Section -->
@@ -964,19 +1291,56 @@
         <div class="container">
           <div class="left-menu">
             <div class="logo-ctn">
-              <img style="width: 122px; height: 96px" src="./images/BVH.png" />
+              <img class="logo-bvh"src="./images/BVH.png" />
               <a href
-                ><img style="width: 169px; height: 96px" src="./images/VTC.png"
+                ><img class="logo-vtc" src="./images/VTC.png"
               /></a>
             </div>
           </div>
 
           <div class="right-menu">
             <ul class="nav-links">
-              <li><a href>Tham dự</a></li>
               <li><a href>Thể lệ</a></li>
               <li><a href>Liên hệ</a></li>
             </ul>
+
+             <!-- burger menu -->
+            <div class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+         <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-menu-header">
+            <button class="close-menu" id="closeMenu">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="mobile-menu-content">
+               <div class="mobile-user">
+                <div class="user-avatar">
+                    <img src="./images/avatar.jpg" alt="User Avatar" />
+                </div>
+                <div class="user-name">
+                    Nguyễn Văn A
+                </div>
+                <img class="arr-right" src="./images/arr-right.png" alt="">
+            </div>
+
+           
+
+            <ul class="mobile-nav-links">
+              <li><a href>Trang chủ</a></li>
+              <li><a href>Thể lệ</a></li>
+              <li><a href>Liên hệ</a></li>
+            </ul>
+         
+            
           </div>
         </div>
       </nav>
@@ -991,14 +1355,18 @@
 
           <div class="hero-content">
             <span class="hero-title">Cuộc thi</span>
-            <img src="./images/hero-bansac.png" />
+            <img class="hero-img" src="./images/hero-img-bs.png" />
             <p class="hero-description">
               Khám phá bản thân • Tôn vinh văn hóa • Lan tỏa tri thức
             </p>
-            <a href class="btn-register-hero">Gửi bài dự thi vodcast</a>
+            <a href class="btn-register-hero">Bình chọn vodcast</a>
+            <a href class="btn-register-hero hidden">Gửi bài dự thi vodcast</a>
+            <a href class="btn-register-hero hidden">Đố vui Bản sắc</a>
+            <a href class="btn-register-hero hidden">xem bảng xếp hạng</a>
           </div>
         </div>
-        <img class="hero-footer" src="./images/img-hero.png" />
+        <img class="hero-footer" src="./images/hero-footer.svg" />
+        <img class="hero-footer-mb" src="./images/hero-footer-mb.svg"/>
       </section>
 
       <!-- Intro Section -->
@@ -1009,8 +1377,11 @@
             <div class="col col-lg-7 col-md-12 col-sm-12 col-12">
                <div class="intro-content">
                     <h2 class="intro-title">Giới thiệu chương trình</h2>
-                    <p class="intro-text">Tham gia Cuộc thi trực tuyến "Bản Sắc" để khám phá văn hóa Việt qua các phần thi sáng tác video và trắc nghiệm kiến thức.</p>
-                    <p class="intro-text">Truy cập www.bansac.vn từ 12/8/2025 để tranh tài và nhận nhiều giải thưởng hấp dẫn!</p>
+                    <div class="display-none-576">
+                      <p class="intro-text">Tham gia Cuộc thi trực tuyến "Bản Sắc" để khám phá văn hóa Việt qua các phần thi sáng tác video và trắc nghiệm kiến thức.</p>
+                      <p class="intro-text">Truy cập www.bansac.vn từ 15/8/2025 để tranh tài và nhận nhiều giải thưởng hấp dẫn!</p>
+                    </div>
+                    
                </div>
               
             </div>
@@ -1025,6 +1396,11 @@
                                                   allowfullscreen>
                   </iframe>
                 </div>
+
+                 <div class="display-block-576">
+                      <p class="intro-text">Tham gia Cuộc thi trực tuyến "Bản Sắc" để khám phá văn hóa Việt qua các phần thi sáng tác video và trắc nghiệm kiến thức.</p>
+                      <p class="intro-text">Truy cập www.bansac.vn từ 15/8/2025 để tranh tài và nhận nhiều giải thưởng hấp dẫn!</p>
+                  </div>
             </div>
         </div>
 
@@ -1040,7 +1416,7 @@
           <!-- Contact content here -->
            <p class="prize-title1">Tổng giải thưởng</p>
            <p class="prize-title2">100,000,000 tiền mặt <br/>
-và gần 1 tỷ giá trị hiện vật (*)</p>
+và gần 1 tỷ giá trị hiện vật <span>(*)</span></p>
             <p class="prize-text">Kèm giấy chứng nhận vinh danh từ BTC và phần quà văn hóa đặc biệt gồm tập <br> vé: phim điện ảnh, các chương trình ca nhạc đặc sắc, các chương trình biểu <br> diễn nghệ thuật quốc gia, các trận đấu thể thao đỉnh cao và nhiều phần quà <br> hiện vật khác từ nhà tài trợ.</p>
             <p class="prize-note">(*) tổng giá trị giải thưởng</p>
         </div>
@@ -1052,8 +1428,8 @@ và gần 1 tỷ giá trị hiện vật (*)</p>
         <div class="container">
           <!-- Route content here -->
           <h2 class="route-title">Lịch trình cuộc thi</h2>
-
-          <div class="main-route">
+          <div class="main-route-ctn">
+<div class="main-route">
              <div class="route-no-1">
                 <img src="./images/route-img-1.png">
                 <div class="route-content-1">
@@ -1071,8 +1447,8 @@ Vodcast Đối thoại Bản sắc</p>
 Vodcast Đối thoại Bản sắc</p>
                   <p class="route-text-1">Cuộc thi kiến thức:<br>
 Hiểu biết Bản sắc</p>
-                  <a href class="route-btn-1">Bình chọn vodcast</a>
-                  <a href class="route-btn-1">Đố vui Bản sắc</a>
+                  <a href class="route-btn-1 hidden">Bình chọn vodcast</a>
+                  <a href class="route-btn-1 hidden">Đố vui Bản sắc</a>
 
                 </div>
              </div>
@@ -1081,10 +1457,12 @@ Hiểu biết Bản sắc</p>
                 <div class="route-content-3">
                   <p class="route-title-1">07/09</p>
                   <p class="route-text-1">Công bố kết quả</p>
-                  <a href class="route-btn-1">xem bảng xếp hạng</a>
+                  <a href class="route-btn-1 hidden">xem bảng xếp hạng</a>
                 </div>
              </div>
           </div>
+          </div>
+          
         </div>
         <img class="route-footer" src="./images/route-footer.png">
       </section>
@@ -1095,18 +1473,19 @@ Hiểu biết Bản sắc</p>
           <!-- Rules content here -->
 
           <div class="comp-1">
-               <div class="row">
+               <div class="row gx-5 gy-5">
                   <div class="col col-lg-7 col-md-12 col-sm-12 col-12">
+                    <div class="display-block-576">
+                      <div class="rule-label">Cuộc thi sáng tác</div>
+                      <h2 class="rule-title">Vodcast <br>Đối thoại Bản sắc</h2>
+                      <p class="rule-des">Kể câu chuyện bản sắc Việt qua góc nhìn của bạn</p>
+                    </div>
                     <div class="swiper-ctn">
                       <div class="swiper quizSwiper">
                                           <div class="swiper-wrapper">
                                             
                                             <div class="swiper-slide">
-                                              <div class="quiz-number">
-
-                                              
-                                                Câu hỏi 1
-                                              </div>
+                                             
                                                 <div class="video-container">
                                                 <iframe 
                                                   width="100%" height="100%" 
@@ -1116,10 +1495,14 @@ Hiểu biết Bản sắc</p>
                                                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                                   allowfullscreen>
                                                 </iframe>
+                                               </div>
+                                                <div class="quiz-number">
+
+                                              
+                                                Câu hỏi 1
                                               </div>
                                             </div>
                                             <div class="swiper-slide">
-                                              <div class="quiz-number">Câu hỏi 2</div>
                                               <div class="video-container">
                                                 <iframe 
                                                   width="100%" height="100%" 
@@ -1130,9 +1513,22 @@ Hiểu biết Bản sắc</p>
                                                   allowfullscreen>
                                                 </iframe>
                                               </div>
+                                              <div class="quiz-number">Câu hỏi 2</div>
                                             </div>
                                             <div class="swiper-slide">
+                                              <div class="video-container">
+                                                <iframe 
+                                                  width="100%" height="100%" 
+                                                  src="https://www.youtube.com/embed/KH9v--A6khc" 
+                                                  title="YouTube video player"
+                                                  frameborder="0" 
+                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                  allowfullscreen>
+                                                </iframe>
+                                              </div>
                                               <div class="quiz-number">Câu hỏi 3</div>
+                                            </div>
+                                             <div class="swiper-slide">
                                               <div class="video-container">
                                                 <iframe 
                                                   width="100%" height="100%" 
@@ -1143,22 +1539,9 @@ Hiểu biết Bản sắc</p>
                                                   allowfullscreen>
                                                 </iframe>
                                               </div>
-                                            </div>
-                                             <div class="swiper-slide">
                                               <div class="quiz-number">Câu hỏi 4</div>
-                                              <div class="video-container">
-                                                <iframe 
-                                                  width="100%" height="100%" 
-                                                  src="https://www.youtube.com/embed/KH9v--A6khc" 
-                                                  title="YouTube video player"
-                                                  frameborder="0" 
-                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                                  allowfullscreen>
-                                                </iframe>
-                                              </div>
                                             </div>
                                              <div class="swiper-slide">
-                                              <div class="quiz-number">Câu hỏi 5</div>
                                                 <div class="video-container">
                                                 <iframe 
                                                   width="100%" height="100%" 
@@ -1169,6 +1552,8 @@ Hiểu biết Bản sắc</p>
                                                   allowfullscreen>
                                                 </iframe>
                                               </div>
+                                              <div class="quiz-number">Câu hỏi 5</div>
+
                                             </div>
                                           </div>
 
@@ -1183,9 +1568,12 @@ Hiểu biết Bản sắc</p>
 
                   </div>
                   <div class="col col-lg-5 col-md-12 col-sm-12 col-12">
-                    <div class="rule-label">Cuộc thi sáng tác</div>
-                    <h2 class="rule-title">Vodcast <br>Đối thoại Bản sắc</h2>
-                    <p class="rule-des">Kể câu chuyện bản sắc Việt qua góc nhìn của bạn</p>
+                    <div class="display-none-576">
+                      <div class="rule-label">Cuộc thi sáng tác</div>
+                      <h2 class="rule-title">Vodcast <br>Đối thoại Bản sắc</h2>
+                      <p class="rule-des">Kể câu chuyện bản sắc Việt qua góc nhìn của bạn</p>
+                    </div>
+                   
                     <div class="rule-content">
                       <div class="flex-btw" style="margin-bottom: 25px;">
                         <div class="rule-sub-title">Thể lệ</div>
@@ -1204,16 +1592,16 @@ Hiểu biết Bản sắc</p>
 
                      <div class="rule-line">
                           <div class="rule-sub-title-2" >Giải thưởng</div>
-                          <p class="rule-text">Tổng giá trị: 10x</p>
+                          <p class="rule-text">Tổng giá trị: 60.000.000 VNĐ</p>
                            <p class="rule-text">Xem chi tiết <a href class="rule-link">tại đây!</a> </p>
                       </div>
 
                     </div>
 
                     <div class="rule-btn-group">
-                        <div class="rule-time"><img src="./images/clock.png" />Kết thúc sau 3 ngày 23:34:32</div>
+                        <div class="rule-time"><img src="./images/clock.png" />Kết thúc sau <span id="stDay">3</span> ngày <span id="stHour">23</span>:<span id="stMinute">34</span>:<span id="stSecond">32</span></div>
                         <a href class="btn-share">Chia sẻ vodcast của bạn</a>
-                        <a href class="btn-vote">Bình chọn vodcast ngay</a>
+                        <a href class="btn-vote hidden">Bình chọn vodcast ngay</a>
 
                     </div>
                 </div>
@@ -1231,7 +1619,22 @@ Hiểu biết Bản sắc</p>
                 <div class="col col-lg-7 col-md-12 col-sm-12 col-12" style="border-bottom: 1px dashed #C4C4C4; padding-bottom: 40px;">
                     <div class="rule-label">cuộc thi kiến thức</div>
                     <h2 class="rule-title">HIỂU BIẾT BẢN SẮC</h2>
-                    <p class="rule-des">THAM GIA CUỘC THI VỚI HÀNG NGHÌN CÂU HỎI THÚ VỊ VỀ VĂN HOÁ, ĐẤT NƯỚC, CON NGƯỜI VIỆT NAM</p>
+                    <p class="rule-des" style="padding-right: 2px;">THAM GIA CUỘC THI VỚI HÀNG NGHÌN CÂU HỎI THÚ VỊ VỀ VĂN HOÁ, ĐẤT NƯỚC, CON NGƯỜI VIỆT NAM</p>
+
+                      <div class="display-block-576">
+                        <div class="phone-video-ctn">
+                                                <div class="phone-video">
+                                                  <iframe 
+                                                    width="100%" height="100%" 
+                                                    src="https://www.youtube.com/embed/Gr7zVsvUyWw" 
+                                                    title="YouTube video player"
+                                                    frameborder="0" 
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                    allowfullscreen>
+                                                   </iframe>
+                         </div>
+                      </div>
+                    </div>
                     <div class="flex-btw" style="margin-bottom: 25px;">
                         <div class="rule-sub-title">Chuỗi 10 ngày nhận thưởng</div>
                         <a href="" class="rule-link">Xem chi tiết</a>
@@ -1296,30 +1699,36 @@ Hiểu biết Bản sắc</p>
                         </div>
                     </div>
 
-                    <div class="rule-line">
+                    <div class="rule-line" style="margin-bottom: 48px;">
                           <div class="rule-sub-title-2">Thể lệ</div>
-                          <p class="rule-text">Xem chi tiết  <a href="" class="rule-link">tại đây!</a></p>
+                          <p class="rule-text">Xem chi tiết  <a href="" class="rule-link dark-link">tại đây!</a></p>
                     </div>
 
                     <div class="rule-btn-group">
-                        <div class="rule-time"><img src="./images/clock.png">Bắt đầu sau 23:03:30 28/08/2025</div>
-                        <a href="" class="btn-share">tham gia ngay</a>
-                        <a href="" class="btn-vote">xem bảng xếp hạng ngay</a>
+                        <div class="rule-time inactive"><img src="./images/clock.png">Bắt đầu vào 00:00:00 28/08/2025</div>
+                        <a href="" class="btn-share disabled">tham gia ngay</a>
+                        <a href="" class="btn-vote hidden">xem bảng xếp hạng ngay</a>
 
                     </div>
                 </div>
 
                  <div class="col col-lg-5 col-md-12 col-sm-12 col-12">
-                    <div class="phone-video">
-                                                <iframe 
-                                                  width="100%" height="100%" 
-                                                  src="https://www.youtube.com/embed/Gr7zVsvUyWw" 
-                                                  title="YouTube video player"
-                                                  frameborder="0" 
-                                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                                  allowfullscreen>
-                                                </iframe>
+                    <div class="display-none-576">
+                        <div class="phone-video-ctn">
+                                                <div class="phone-video">
+                                                  <iframe 
+                                                    width="100%" height="100%" 
+                                                    src="https://www.youtube.com/embed/Gr7zVsvUyWw" 
+                                                    title="YouTube video player"
+                                                    frameborder="0" 
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                    allowfullscreen>
+                                                   </iframe>
+                         </div>
+                      </div>
                     </div>
+                     
+                    
                 </div>
              </div>
            </div>
@@ -1411,15 +1820,15 @@ Hiểu biết Bản sắc</p>
       <div class="container">
         <div class="row">
           <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="pj-name">bản sắc</div>
+            <!-- <div class="pj-name">bản sắc</div> -->
+            <a href class="pj-logo"><img src="./images/logo-footer.svg"/></a>
             <div class="pj-description">
-              Hành trình văn hóa số khơi dậy niềm tự hào dân tộc, kết nổi mọi
-              thể hệ người Việt Nam trong và ngoài nước.
+          Hành trình văn hóa số khơi dậy niềm tự hào dân tộc, kết nối mọi thế hệ người Việt Nam trong và ngoài nước.
             </div>
           </div>
           <div class="col col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="row">
-              <div class="col col-4">
+            <div class="row gy-4">
+              <div class="col col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="footer-b-t">Liên kết</div>
                 <ul class="list-connect">
                   <li><a href="#">Bảng xếp hạng Vodcast</a></li>
@@ -1428,7 +1837,7 @@ Hiểu biết Bản sắc</p>
                   <li><a href="#">Liên hệ</a></li>
                 </ul>
               </div>
-              <div class="col col-4">
+              <div class="col col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="footer-b-t">Thông tin liên hệ</div>
                 <ul class="list-contact">
                   <li>
@@ -1443,7 +1852,7 @@ Hiểu biết Bản sắc</p>
                   </li>
                 </ul>
               </div>
-              <div class="col col-4">
+              <div class="col col-lg-4 col-md-4 col-sm-12 col-12">
                 <div class="footer-b-t">Theo dõi</div>
                 <ul class="list-social">
                   <li>
@@ -1469,9 +1878,8 @@ Hiểu biết Bản sắc</p>
         <div class="copyright">
           <p>© 2025 Bản quyền thuộc về Ban Tổ chức chương trình</p>
           <ul>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
-            <li>Legal</li>
+            <li><a>Chính sách bảo mật</a></li>
+            <li><a>Điều khoản bảo mật</a></li>
           </ul>
         </div>
       </div>
@@ -1495,15 +1903,42 @@ Hiểu biết Bản sắc</p>
     <script src="./js/swiper-bundle.min.js"></script>
     <script>
 
+      // js menu mobile
+
+       const burgerMenu = document.querySelector('.burger-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenu = document.querySelector('.close-menu');
+
+        burgerMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            document.body.classList.add('menu-open');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+
       // swiper
       var swiper = new Swiper(".quizSwiper", {
-      slidesPerView: 2.5,
-      spaceBetween: 30,
-      freeMode: true,
-     navigation: {
+     
+      navigation: {
         nextEl: ".custom-next",
         prevEl: ".custom-prev",
-     },
+      },
+        breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      freeMode: false,
+    },
+    769: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+      freeMode: true,
+
+    }
+  }
     });
 
 
@@ -1544,6 +1979,59 @@ Hiểu biết Bản sắc</p>
 
       window.addEventListener('scroll', handleScrollFooter);
     
+
+      // bộ đếm ngược thời gian đến 00:00:00 sự kiện ngày 26/8
+      function updateCountdownAug26() {
+        // Set target date: August 26, 2025 00:00:00
+        const target = new Date(2025, 7, 26, 0, 0, 0); // Tháng 7 là tháng 8 (JS: 0-based)
+        const now = new Date();
+        let diff = target - now;
+
+        if (diff < 0) diff = 0;
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        document.getElementById('stDay').textContent = days;
+        document.getElementById('stHour').textContent = String(hours).padStart(2, '0');
+        document.getElementById('stMinute').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('stSecond').textContent = String(seconds).padStart(2, '0');
+      }
+
+      updateCountdownAug26();
+      setInterval(updateCountdownAug26, 1000);
+
+
+
+
+      // set up events vào 00:00:00 ngày 26/8
+      function onEventAtMidnightAug26(callback) {
+          // Thời điểm mục tiêu: 00:00:00 ngày 26/8/2025
+          const target = new Date(2025, 7, 26, 0, 0, 0); // Tháng 7 là tháng 8 (JS: 0-based)
+
+         
+          function checkEvent() {
+            const now = new Date();
+            if (now >= target) {
+              callback();
+              clearInterval(timer);
+            }
+          }
+
+          // Kiểm tra ngay khi load
+          checkEvent();
+          // Kiểm tra mỗi giây
+          const timer = setInterval(checkEvent, 1000);
+      }
+
+      // Ví dụ sử dụng:
+      onEventAtMidnightAug26(function() {
+        // Thực hiện các sự kiện tại đây
+         var btn = document.querySelector('.route-content-1 .route-btn-1');
+        if (btn) btn.classList.add('hidden');
+      });
     </script>
   </body>
 </html>

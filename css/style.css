@@ -29,10 +29,21 @@
 }
 
 @font-face {
+  font-family: "MontBold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
   font-family: "PhuduBold";
   src: url(../fonts/Phudu-Bold.ttf);
 }
 
 * {
   font-family: "BeVietnamPro";
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
